@@ -1,10 +1,8 @@
 (function () {
 
-    // Cria um script que adiciona dinamicamente o blip-chat-widget no header da aplicação
 
     const blipChatWidgetScript = document.createElement("script");
 
- 
 
     blipChatWidgetScript.type = "text/javascript";
 
@@ -14,21 +12,13 @@
 
     document.head.append(blipChatWidgetScript);
 
- 
-
-    // Aguarda um tempo até o elemento unpkg ser carregado antes de iniciar o blipchat
-
-    // esperasse que o arquivo carregue em até no máximo de 1 segundo
 
     setTimeout(() => {
 
         const blipChatElement = document.head.getElementsByClassName("blipChatWidgetScript");
 
-        // Verifica se o elemento foi criado corretamente no header
 
         if(blipChatElement.length) {
-
-            // Inicializa o blipchat
 
             new BlipChat()
 
