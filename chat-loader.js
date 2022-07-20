@@ -3,10 +3,11 @@
 
     const blipChatWidgetScript = document.createElement("script");
 
+ 
 
     blipChatWidgetScript.type = "text/javascript";
 
-    blipChatWidgetScript.src = https://unpkg.com/blip-chat-widget;
+    blipChatWidgetScript.src = "https://unpkg.com/blip-chat-widget";
 
     blipChatWidgetScript.className = "blipChatWidgetScript";
 
@@ -20,11 +21,12 @@
 
         if(blipChatElement.length) {
 
+
             new BlipChat()
 
                 .withAppKey('Y2hhdG5vc2l0ZXJvdXRlcjpkODhmYzgzZS1kNjVmLTQ5OGUtYjA2Yy0xNzk5Y2UzNmVhMTM=')
 
-                .withButton({ "color": "#009E0B", "icon": https://blipmediastore.blob.core.windows.net/public-medias/Media_acfae018-9432-47a8-8872-c5bde8576d52 })
+                .withButton({ "color": "#009E0B", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_acfae018-9432-47a8-8872-c5bde8576d52" })
 
                 .withCustomCommonUrl('https://berlin.chat.blip.ai/')
 
