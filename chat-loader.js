@@ -28,7 +28,7 @@
 
                 .withCustomCommonUrl('https://berlin.chat.blip.ai/')
 
-                .withCustomMessageMetadata({ OiDatalayer: JSON.stringify(document.OiDatalayer) })
+                .withCustomMessageMetadata({ OiDatalayer: JSON.stringify(OiDatalayer) })
 
                 .build();
 
