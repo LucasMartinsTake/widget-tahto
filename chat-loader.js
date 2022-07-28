@@ -22,7 +22,7 @@
         if(blipChatElement.length) {
 
 
-            new BlipChat()
+            blipClient = new BlipChat()
 
                 .withAppKey('Y2hhdG5vc2l0ZXJvdXRlcjpkODhmYzgzZS1kNjVmLTQ5OGUtYjA2Yy0xNzk5Y2UzNmVhMTM=')
 
@@ -32,8 +32,13 @@
 
                 .withCustomMessageMetadata({ OiDatalayer: JSON.stringify(document.OiDatalayer) })
 
-                .build();
+                blipClient.build();
 
+                window.setTimeout(function () { blipClient.toogleChat() }, 500);
+
+                const blipChatButton = document.getElementById('blip-chat-open-iframe')
+                
+                blipChatButton.classList.remove('opened')
         }
 
     }, 1000);
