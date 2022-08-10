@@ -24,7 +24,7 @@
 
             blipClient = new BlipChat()
 
-                .withAppKey('Y2hhdG5vc2l0ZXJvdXRlcjpkODhmYzgzZS1kNjVmLTQ5OGUtYjA2Yy0xNzk5Y2UzNmVhMTM=')
+                .withAppKey('Y2hhdG5vc2l0ZXJvdXRlcjE6Y2EzZGU4MzgtOWMxNC00MzI2LThiN2UtMWFhNjkwMjQ1NGQx')
 
                 .withButton({ "color": "#009E0B", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_acfae018-9432-47a8-8872-c5bde8576d52" })
 
